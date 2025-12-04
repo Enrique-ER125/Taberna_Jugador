@@ -98,7 +98,7 @@ public class LugarService {
             if (idJuego != null) {
                 Juego juego = juegoRepository.findById(idJuego)
                         .orElseThrow(() -> new EntityNotFoundException("Juego no encontrado"));
-                juego.getLugars().remove(lugars); // mejor quitar solo este lugar
+                juego.getLugars().remove(lugars);
             }
         }
 

@@ -12,6 +12,7 @@ h1{
    text-align: left;
    display: flex;
    justify-content: space-between;
+   width: 160vh;
    height: 100%;
 }
 #puertaIzq, #puertaDech {
@@ -25,6 +26,7 @@ h1{
    display: flex;
    flex-direction: column;
    border-right: black 2px;
+   height: 120%;
 }
 #Iniciar{
    width: 20%;

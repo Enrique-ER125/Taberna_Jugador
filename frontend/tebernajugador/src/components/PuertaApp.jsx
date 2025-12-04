@@ -25,7 +25,7 @@ const inicio = async () => {
         setPuertasAbiertas(true);
         setTimeout(() => {
       navigate(`/usuario/${usuario}`, { state: datos });
-       }, 2000);
+       }, 1000);
     } catch (error) {
         alert('Error al iniciar sesión: ' + error.message);
     }
