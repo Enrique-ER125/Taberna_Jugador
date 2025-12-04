@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+    background-image: url("../imagenes/tabla.jpg") ;
+    height: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#insigniAbierta , #libroAbierto{
+    position: absolute;
+    align-items: center;
+    z-index: 1;
+    background-color: black;
+}
+#botella{
+      position: absolute;
+    align-items: center;
+    z-index: 1; 
+    background-image: url("../imagenes/tabla.jpg") ;
+}
+
+#contenedor2{
+    margin: 0;
+    padding: 0;
+    height:60vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+title{
+    font-family: 'Fleur De Leah';
+}
+
+#cabecera{
+    position:relative;
+    z-index: 0;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
+#letrCabe{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: 'Fleur De Leah';
+    font-size: 300%;
+    width: 100%;
+    height: 10%;
+}
+#imgCabecera{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#img{
+    font-size:250%;
+    height: 10%;
+    text-align: center;
+}
+img{
+    height: 100px;
+}
+#postbarra{
+    background-image: url("./../imagenes/manilla.jpg");
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    height:500vh;
+    width: 100%;
+}
+
+#central{
+    display:flex;
+    align-items: flex-end;
+}
+
+#libro{
+   height: 13px;
+}
+
+#jugar{
+background-image: url("./../imagenes/vaso.png");
+background-repeat: no-repeat;
+height: 80px;
+background-size: contain;
+width: 140px;
+background-position: center;
+align-content: center;
+}
+
+@keyframes mover_barman{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-150%);
+    }
+}
+
+#barman{
+    animation: mover_barman 3s infinite alternate ease-in-out;
+     display:flex;
+    justify-content: center;
+    flex-direction: row;
+}
+#dialogo{
+    background-color: white;
+    border-radius: 5px;
+    height: 25%;
+}
+#barra{
+    background-image: url("../imagenes/tablacopia.jpg");
+    width: 100%;
+    height: 100%;
+}
+#scroll{
+    height: 42vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 44%;
+    border:1px solid;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 1200px) {
+  #segundoBarril svg {
+    width: 150px; 
+  }
+  #segundoBarril circle {
+    r: 40; 
+  }
+  #segundoBarril text {
+    font-size: 15px; 
+  }
+  #primerBarril svg {
+    width: 150px; 
+  }
+  #primerBarril circle {
+    r: 40; 
+  }
+  #primerBarril text {
+    font-size: 16px; 
+  }
+  #insignia svg {
+    width: 100px; 
+    height: 100px;
+  }
+
+  #insignia text {
+    font-size: 12px; 
+  }
+  #libro{
+    width: 250px; 
+    height: 30px;
+  }
+  @keyframes mover_barman{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-220%);
+    }
+}
+}
+

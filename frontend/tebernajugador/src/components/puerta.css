@@ -1,0 +1,71 @@
+div {
+   width: 100%;
+}
+h1{
+   text-align: center; 
+   color: red;
+   width: 100%;
+   display: block;
+   background-color: burlywood;
+}
+#contenedor{
+   text-align: left;
+   display: flex;
+   justify-content: space-between;
+   height: 100%;
+}
+#puertaIzq, #puertaDech {
+  flex: 1;
+  transition: transform 1s ease-in-out;
+  transform-origin: center;
+}
+#puertaIzq{
+    transform-origin: left center;
+   background-image: url("/public/imagenes/tabla.jpg");
+   display: flex;
+   flex-direction: column;
+   border-right: black 2px;
+}
+#Iniciar{
+   width: 20%;
+   display: flex;
+   flex-direction: column;
+}
+#puertaDech{
+   transform-origin: right center;
+   background-image: url("/public/imagenes/tabla.jpg");
+   border-left: solid black 4px;
+   display: flex;
+   flex-direction: column;
+}
+#puertaIzq.abierta {
+  transform: perspective(800px) rotateY(-90deg);
+}
+
+#puertaDech.abierta {
+  transform: perspective(800px) rotateY(90deg);
+}
+#Registrarse{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+}
+#Invitado>h2{
+   color: black;
+   text-decoration: none;
+}
+#Invitado{
+   margin: 20px;
+   width: 100px;
+   height: 100px;
+   background-color: brown;
+}
+#Invitado:hover{
+background-color: green;
+}
+#Iniciar input, #Registrarse input {
+  width: 150%; 
+}
+#Registrarse input, #Registrarse input {
+  width: 70%; 
+}

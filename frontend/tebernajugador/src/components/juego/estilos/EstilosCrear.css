@@ -1,0 +1,76 @@
+#contenedorJuego{
+    margin-top: 5%;
+   margin-left: 5%;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+}
+input{
+    width: 20%;
+}
+
+form{
+    position: absolute;
+  width: 100%;
+  right: 25%;
+  display: flex;
+  flex-direction: column;   
+  align-items: center;      
+  justify-content: center;  
+  text-align: center;
+}
+#pergamino2{
+    position: relative;
+    background-image: url("./../../imagenes/pergamino.png");
+    background-repeat: no-repeat;
+    height:500px;
+    width: 600px;
+    background-size: contain;
+    background-position: center;
+}
+#pergamino2 #lugar{
+    top: 85px;
+    left: 25%;
+    right: 130px;
+    width: 90%;
+    position: absolute;
+    text-align: left;
+}
+#scroll{
+    height: 30vh;
+    border: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+#criatura{
+   top: 85px;
+    width: 90%;
+    left: 25%;
+    position: absolute;
+    text-align: left;
+}
+
+#hechizo{
+   top: 85px;
+    width: 90%;
+    left: 25%;
+    position: absolute;
+    text-align:left;
+}
+
+.overlay {
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background:black;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:2em;
+  z-index:999;
+}

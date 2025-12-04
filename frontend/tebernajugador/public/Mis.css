@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+body{
+    background-image: url("imagenes/tabla.jpg") ;
+    height: 100%;
+    height: 50%;
+}
+#insigniAbierta{
+    visibility: hidden;
+    position: absolute;
+    align-items: center;
+    z-index: 1;
+    background-color: black;
+}
+#contenedor{
+    position:relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;   
+}
+title{
+    font-family: 'Fleur De Leah';
+}
+
+
+#enredadera{
+    position: absolute;
+    z-index: 1;
+    height: 10%;
+    width: 20%;
+}
+#cabecera{
+    position:relative;
+    z-index: 0;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
+#letrCabe{
+    font-family: 'Fleur De Leah';
+    width: 100%;
+    height: 100px;
+}
+#imgCabecera{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#img{
+    font-size:250%;
+    height: 10%;
+    text-align: center;
+}
+img{
+    height: 100px;
+}
+#postbarra{
+    padding-left: 10%;
+    padding-right: 5%;
+    background-image: url("taberna_del_jugador/imagenes/manilla.jpg");
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#central{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#libro{
+   height: 13px;
+}
+
+#jugar{
+    height: 70px;
+    width: 40px;
+    background-color: rebeccapurple;
+    border-radius: 70px 70px 0px 0px;
+}
+#grupo{
+    border-radius: 100px 100px 100px 100px;
+    background-color: aquamarine;
+}
+
+@keyframes mover_barman{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-150%);
+    }
+}
+
+#barman{
+    animation: mover_barman 3s infinite alternate ease-in-out;
+}
+#calendario{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+}
+
+#barra{
+    background-image: url("taberna_del_jugador/imagenes/tablacopia.jpg");
+    width: 100%;
+    height: 100%;
+}
+
+#scroll{
+    height: 250px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    border:1px solid;
+}
